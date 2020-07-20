@@ -1,7 +1,6 @@
 package za.cput.ict3.sonwabodevspace;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 public class FirthActivity extends AppCompatActivity {

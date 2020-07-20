@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final String name = getIntent().getStringExtra("");
+        final String name = getIntent().getStringExtra("Kanya");
         EditText editText1 = findViewById(R.id.editText1);
         //TextView textView2 = findViewById(R.id.textView2);
        // TextView textView3 = findViewById(R.id.textView3);
@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {Intent intent =new Intent(MainActivity.this,SecondActivity.class);
-                String name = text.getText().toString();
-                intent.putExtra("",intent);
+               // String name = text.getText().toString();
+                //intent.putExtra("Kanya",intent);
                 startActivity(intent);
 
             }
