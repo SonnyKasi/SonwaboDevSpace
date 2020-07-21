@@ -7,9 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
-
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,13 +17,9 @@ public class MainActivity extends AppCompatActivity {
 
         final String message = getIntent().getStringExtra("KEY");
         EditText editText1 = findViewById(R.id.editText1);
-        //TextView textView2 = findViewById(R.id.textView2);
-       // TextView textView3 = findViewById(R.id.textView3);
         editText1.setText(message);
-       // textView2.setText(name);
-       // textView3.setText(name);
 
-        final Button button = findViewById(R.id.button1);
+        final Button button = findViewById(R.id.buttonNext);
         final EditText text = findViewById(R.id.editText1);
 
         button.setOnClickListener(new View.OnClickListener() {

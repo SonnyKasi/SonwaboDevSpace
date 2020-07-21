@@ -5,12 +5,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-import static android.provider.Contacts.SettingsColumns.KEY;
+public class SecondActivity extends AppCompatActivity{
 
-public class SecondActivity extends AppCompatActivity {
+
+    // OnClickListener onClickListener;
+    Button button1 = findViewById(R.id.buttonHome);
+    Button button2 = findViewById(R.id.buttonCalculate);
+    Button button3 = findViewById(R.id.buttonAbout);
+    Button button4 = findViewById(R.id.buttonDevProfile);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,24 +30,64 @@ public class SecondActivity extends AppCompatActivity {
         view.setText(message);
 
 
-        Button button = findViewById(R.id.buttonHome);
-        button.setOnClickListener(new View.OnClickListener() {
+        button1.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                openNewActivity();
+                Intent intent = new Intent(SecondActivity.this, MainActivity.class);
+                startActivity(intent);
+
             }
         });
+
+        button2.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        button3.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SecondActivity.this, FourthActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        button4.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SecondActivity.this, FirthActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
     }
 
-         public void openNewActivity() {
-            Intent intent1 = new Intent(SecondActivity.this, ThirdActivity.class);
-        }
-
-
-        Button button2 = findViewById(R.id.buttonAbout);
-
-        Intent intent2 = new Intent(SecondActivity.this,FourthActivity.class);
-
-
-
-    }
+}
+/*
+ * @Override public void onClick(View v) {
+ * switch (v.getId()) {
+ * case R.id.buttonHome:
+ * Intent intent = new Intent(SecondActivity.this, MainActivity.class);
+ * startActivity(intent);
+ * break;
+ * case R.id.buttonCalculate:
+ * intent = new Intent(SecondActivity.this, ThirdActivity.class);
+ * startActivity(intent);
+ * break;
+ * case R.id.buttonAbout:
+ * intent = new Intent(SecondActivity.this, FourthActivity.class);
+ * startActivity(intent);
+ * break;
+ * case R.id.buttonDevProfile:
+ * intent = new Intent(SecondActivity.this, FirthActivity.class);
+ * startActivity(intent);
+ * break;
+ * default:
+ * throw new IllegalStateException("Unexpected value: " + v.getId());
+ * }
+ * }
+ * }*/

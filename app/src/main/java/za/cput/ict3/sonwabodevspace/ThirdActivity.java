@@ -2,17 +2,17 @@ package za.cput.ict3.sonwabodevspace;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 
 public class ThirdActivity extends AppCompatActivity {
-    Button button;
+    Button button,button2;
     TextInputEditText text;
 
     @Override
@@ -20,10 +20,19 @@ public class ThirdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 
-        button = (Button)findViewById(R.id.buttonCalc);
+        button = (Button)findViewById(R.id.buttonCalculate);
         text  = (TextInputEditText) findViewById(R.id.numInput);
 
-        button.setOnClickListener(
+        button2 = (Button)findViewById(R.id.buttonBack) ;
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {Intent intent = new Intent(ThirdActivity.this, SecondActivity.class);
+                startActivity(intent);
+                ;
+            }
+        });
+
+               button.setOnClickListener(
                 new View.OnClickListener()
                 {
                     public void onClick(View view)
@@ -45,6 +54,16 @@ public class ThirdActivity extends AppCompatActivity {
                         }
                     }
     });
-}
-}
+}}
+
+   /* private void openPreviousActivity() {
+        Intent intent = new Intent(this,SecondActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onClick(View v) {
+
+    }/**/
+
 
