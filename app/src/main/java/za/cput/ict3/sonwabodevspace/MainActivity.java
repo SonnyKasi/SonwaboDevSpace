@@ -9,15 +9,17 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+    EditText editText;
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final String message = getIntent().getStringExtra("KEY");
-        EditText editText1 = findViewById(R.id.editText1);
-        editText1.setText(message);
+        //final String message = getIntent().getStringExtra("KEY");
+        //EditText editText = findViewById(R.id.editText1);
+       // editText.setText(message);
 
         final Button button = findViewById(R.id.buttonNext);
         final EditText text = findViewById(R.id.editText1);
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {Intent intent =new Intent(MainActivity.this,SecondActivity.class);
-                String message = text.getText().toString();
+                String message =  text.getText().toString();
                 intent.putExtra("KEY",message);
                 startActivity(intent);
 

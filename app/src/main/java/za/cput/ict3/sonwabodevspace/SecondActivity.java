@@ -12,11 +12,9 @@ import android.widget.TextView;
 public class SecondActivity extends AppCompatActivity{
 
 
-    // OnClickListener onClickListener;
-    Button button1 = findViewById(R.id.buttonHome);
-    Button button2 = findViewById(R.id.buttonCalculate);
-    Button button3 = findViewById(R.id.buttonAbout);
-    Button button4 = findViewById(R.id.buttonDevProfile);
+
+   Button button1,button2,button3,button4;
+   TextView textView1,textView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +24,15 @@ public class SecondActivity extends AppCompatActivity{
         Intent intent = getIntent();
         String message = intent.getStringExtra("KEY");
 
-        TextView view = findViewById(R.id.textView4);
-        view.setText(message);
+        textView1 = findViewById(R.id.textView4);
+        textView1.setText("");
+        textView2 = findViewById(R.id.textView5);
+        textView2.setText("");
+
+        Button button1 = findViewById(R.id.buttonHome);
+        Button button2 = findViewById(R.id.buttonCalculate);
+        Button button3 = findViewById(R.id.buttonAbout);
+        Button button4 = findViewById(R.id.buttonDevProfile);
 
 
         button1.setOnClickListener(new OnClickListener() {

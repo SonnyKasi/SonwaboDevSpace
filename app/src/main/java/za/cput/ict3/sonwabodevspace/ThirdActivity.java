@@ -7,13 +7,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 
 public class ThirdActivity extends AppCompatActivity {
     Button button,button2;
-    TextInputEditText text;
+    EditText num1,num2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,10 @@ public class ThirdActivity extends AppCompatActivity {
         setContentView(R.layout.activity_third);
 
         button = (Button)findViewById(R.id.buttonCalculate);
-        text  = (TextInputEditText) findViewById(R.id.numInput);
+        num1 = (EditText) findViewById(R.id.editText3);
+        num2 = (EditText) findViewById(R.id.editText2);
+
+
 
         button2 = (Button)findViewById(R.id.buttonBack) ;
         button2.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +43,7 @@ public class ThirdActivity extends AppCompatActivity {
                     {
                         try
                         {
-                            int result = Integer.parseInt(text.getText().toString())/Integer.parseInt(text.getText().toString());
+                            int result = Integer.parseInt(num1.getText().toString())/Integer.parseInt(num2.getText().toString());
                             // show it to them
                             Log.v("EditText", "result is "+result);
 
@@ -48,7 +52,7 @@ public class ThirdActivity extends AppCompatActivity {
                         }
                         catch (final NumberFormatException e)
                         {
-                            // tell them they didnt enter a valid number
+                            // tell them they didn't enter a valid number
                             Toast.makeText(getApplicationContext(),"Please Enter a valid number",
                                     Toast.LENGTH_LONG).show();
                         }
