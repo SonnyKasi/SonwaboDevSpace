@@ -5,6 +5,7 @@
     android:id="@+id/MYDEVPROFILE"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C0CA33"
     tools:context=".FirthActivity">
 
     <LinearLayout
@@ -29,11 +30,8 @@
             android:layout_width="wrap_content"
             android:layout_height="47dp"
             android:layout_gravity="center"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textColor="@color/design_default_color_on_secondary" />
     </LinearLayout>
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

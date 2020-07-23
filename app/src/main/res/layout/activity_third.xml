@@ -5,6 +5,7 @@
     android:id="@+id/CALCULATE"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00ACC1"
     tools:context=".ThirdActivity">
 
     <Button
@@ -36,6 +37,7 @@
         android:layout_marginTop="136dp"
         android:text="Density Calculation"
         android:textSize="18sp"
+        android:textColor="@color/design_default_color_on_primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -45,6 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="108dp"
+        android:textColor="@color/design_default_color_on_secondary"
         android:layout_marginRight="108dp"
         android:layout_marginBottom="82dp"
         android:ems="10"
@@ -57,6 +60,7 @@
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/design_default_color_on_secondary"
         android:layout_marginEnd="108dp"
         android:layout_marginRight="108dp"
         android:layout_marginBottom="102dp"

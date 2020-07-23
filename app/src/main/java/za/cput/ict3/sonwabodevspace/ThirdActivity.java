@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
 /**
  * Author: Sonwabo Kasi
@@ -53,8 +54,12 @@ public class ThirdActivity extends AppCompatActivity {
                             // show it to them
                             Log.v("EditText", "result is "+result);
 
-                            Toast.makeText(getApplicationContext(),"result is "+result,
-                                    Toast.LENGTH_LONG).show();
+                            Snackbar.make(findViewById(R.id.parent), +result,
+                                    Snackbar.LENGTH_SHORT)
+                                    .show();
+
+                            //Toast.makeText(getApplicationContext(),"result is "+result,
+                                    //Toast.LENGTH_LONG).show();
                         }
                         catch (final NumberFormatException e)
                         {

@@ -15,7 +15,7 @@ import android.widget.EditText;
  */
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "za\\cput\\ict3\\sonwabodevspace" ;
+    public static final String EXTRA_MESSAGE = "za.cput.ict3.sonwabodevspace" ;
     EditText editText;
     Button button;
 
@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {Intent intent =new Intent(MainActivity.this,SecondActivity.class);
-                String message =  editText.getText().toString();
-                intent.putExtra("KEY",message);
+                //String message =  editText.getText().toString();
+                //intent.putExtra(Intent.EXTRA_MESSAGE,message);
                 startActivity(intent);
 
             }
