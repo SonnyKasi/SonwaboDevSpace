@@ -8,6 +8,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+
+import static za.cput.ict3.sonwabodevspace.MainActivity.EXTRA_MESSAGE;
+
 /**
  * Author: Sonwabo Kasi
  * Class: Part Time
@@ -26,7 +29,8 @@ public class SecondActivity extends AppCompatActivity{
         setContentView(R.layout.activity_second);
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String message = intent.getStringExtra(EXTRA_MESSAGE);
+        EXTRA_MESSAGE = message;
 
         textView1 = findViewById(R.id.textView4);
         textView1.setText("Greetings ");
@@ -69,7 +73,7 @@ public class SecondActivity extends AppCompatActivity{
         button4.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SecondActivity.this, ListViewActivity.class);
+                Intent intent = new Intent(SecondActivity.this, FirthActivity.class);
                 startActivity(intent);
 
             }

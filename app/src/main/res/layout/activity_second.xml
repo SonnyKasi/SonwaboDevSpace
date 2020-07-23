@@ -5,7 +5,7 @@
     android:id="@+id/MENU"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7CB342"
+    android:background="#3949AB"
     tools:context=".SecondActivity">
 
     <TextView
@@ -15,8 +15,8 @@
         android:layout_marginEnd="272dp"
         android:layout_marginRight="272dp"
         android:text="Greetings"
-        android:textSize="24sp"
         android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -28,8 +28,8 @@
         android:layout_marginRight="152dp"
         android:layout_marginBottom="92dp"
         android:text="Welcome to my code space."
-        android:textSize="18sp"
         android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonHome"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -84,10 +84,16 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginRight="166dp"
         android:text="TextView"
+        android:textColor="@color/design_default_color_on_primary"
         android:textSize="24sp"
-        android:textColor="@color/design_default_color_on_secondary"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="140dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

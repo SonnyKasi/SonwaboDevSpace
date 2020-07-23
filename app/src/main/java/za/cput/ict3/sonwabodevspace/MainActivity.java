@@ -15,7 +15,7 @@ import android.widget.EditText;
  */
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "za.cput.ict3.sonwabodevspace" ;
+    public static String EXTRA_MESSAGE = "za.cput.ict3.sonwabodevspace" ;
     EditText editText;
     Button button;
 
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SecondActivity.class);
         final EditText editText = (EditText) findViewById(R.id.editText1);
         String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
+        intent.putExtra(EXTRA_MESSAGE,message);
         //startActivity(intent);
 
         final Button button = findViewById(R.id.buttonNext);
