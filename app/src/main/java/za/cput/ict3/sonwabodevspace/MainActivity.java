@@ -27,10 +27,10 @@ public class MainActivity extends AppCompatActivity {
         //final String message = getIntent().getStringExtra("KEY");
         //EditText editText = findViewById(R.id.editText1);
        // editText.setText(message);
-        Intent intent = new Intent(this, SecondActivity.class);
-        final EditText editText = (EditText) findViewById(R.id.editText1);
+        Intent sendName = new Intent(MainActivity.this, SecondActivity.class);
+        EditText editText = (EditText) findViewById(R.id.editText1);
         String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,message);
+        sendName.putExtra("EXTRA_MESSAGE",message);
         //startActivity(intent);
 
         final Button button = findViewById(R.id.buttonNext);

@@ -30,7 +30,7 @@ public class SecondActivity extends AppCompatActivity{
 
         Intent intent = getIntent();
         String message = intent.getStringExtra(EXTRA_MESSAGE);
-        EXTRA_MESSAGE = message;
+        //EXTRA_MESSAGE = message;
 
         textView1 = findViewById(R.id.textView4);
         textView1.setText("Greetings ");

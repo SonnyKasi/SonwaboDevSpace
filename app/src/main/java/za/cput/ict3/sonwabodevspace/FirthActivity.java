@@ -29,11 +29,11 @@ public class FirthActivity extends AppCompatActivity {
     Context context;
     ArrayList myHandles;
 
-    public static final Integer [] handleImages = {
+    public static final Integer[] handleImages = {
             R.drawable.avata,R.drawable.telephone,R.drawable.email,R.drawable.linkedin,R.drawable.github,
     };
 
-    public static String [] myHandle = new String[]{
+    public static String[] myHandle = new String[]{
             "Sonwabo Kasi", "0826811442", "glanzo3@gmail.com", "Sonwabo Kasi", "SonnyKasi"
     };
 
@@ -62,21 +62,14 @@ public class FirthActivity extends AppCompatActivity {
 
             }
         });
+
     }
 }
 
 
-       /* ImageView imageView = (ImageView) findViewById(R.id.imageView);
-        imageView.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                Uri uri = Uri.parse("https://www.instagram.com/slicksolly/");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
-        });
 
-        ImageView imageView1 = (ImageView) findViewById(R.id.imageView);
+
+        /*ImageView imageView1 = (ImageView) findViewById(R.id.imageView);
         imageView1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
