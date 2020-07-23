@@ -11,8 +11,6 @@ import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity{
 
-
-
    Button button1,button2,button3,button4;
    TextView textView1,textView2;
 
@@ -22,12 +20,12 @@ public class SecondActivity extends AppCompatActivity{
         setContentView(R.layout.activity_second);
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra("KEY");
+        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
         textView1 = findViewById(R.id.textView4);
-        textView1.setText("");
+        textView1.setText("Greetings"+ message);
         textView2 = findViewById(R.id.textView5);
-        textView2.setText("");
+        //textView2.setText("");
 
         Button button1 = findViewById(R.id.buttonHome);
         Button button2 = findViewById(R.id.buttonCalculate);

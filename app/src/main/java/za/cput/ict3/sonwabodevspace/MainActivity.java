@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String EXTRA_MESSAGE = "" ;
     EditText editText;
     Button button;
 
@@ -20,14 +21,19 @@ public class MainActivity extends AppCompatActivity {
         //final String message = getIntent().getStringExtra("KEY");
         //EditText editText = findViewById(R.id.editText1);
        // editText.setText(message);
+        Intent intent = new Intent(this, SecondActivity.class);
+        final EditText editText = (EditText) findViewById(R.id.editText1);
+        String message = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, message);
+        //startActivity(intent);
 
         final Button button = findViewById(R.id.buttonNext);
-        final EditText text = findViewById(R.id.editText1);
+        //final EditText text = findViewById(R.id.editText1);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {Intent intent =new Intent(MainActivity.this,SecondActivity.class);
-                String message =  text.getText().toString();
+                String message =  editText.getText().toString();
                 intent.putExtra("KEY",message);
                 startActivity(intent);
 
