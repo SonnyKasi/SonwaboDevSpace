@@ -7,6 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+/**
+ * Author: Sonwabo Kasi
+ * Class: Part Time
+ * Student number: 214293939
+ * Class Description: About screen
+ */
 
 public class FourthActivity extends AppCompatActivity {
     Button button;
@@ -21,7 +27,7 @@ public class FourthActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FourthActivity.this, ThirdActivity.class);
+                Intent intent = new Intent(FourthActivity.this, SecondActivity.class);
                 startActivity(intent);
 
 
@@ -35,5 +41,6 @@ public class FourthActivity extends AppCompatActivity {
                 "I enjoy coding and resolving issues within a code." +
                 "I wish to open my own development company and a non-profit organisation to teach disadvantaged children coding" +
                 "This world would be a better place if we look out for each other.");
+
     }
 }

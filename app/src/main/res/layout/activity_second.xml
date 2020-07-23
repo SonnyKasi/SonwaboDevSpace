@@ -11,8 +11,8 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="284dp"
-        android:layout_marginRight="284dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginRight="272dp"
         android:text="Greetings"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
@@ -22,9 +22,9 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="164dp"
-        android:layout_marginRight="164dp"
-        android:layout_marginBottom="136dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginRight="152dp"
+        android:layout_marginBottom="92dp"
         android:text="Welcome to my code space."
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonHome"
@@ -76,5 +76,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="140dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

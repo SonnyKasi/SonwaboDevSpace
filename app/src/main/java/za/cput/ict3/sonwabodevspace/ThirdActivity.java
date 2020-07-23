@@ -11,6 +11,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
+/**
+ * Author: Sonwabo Kasi
+ * Class: Part Time
+ * Student number: 214293939
+ * Class Description: Calculation screen
+ */
 
 public class ThirdActivity extends AppCompatActivity {
     Button button,button2;

@@ -7,9 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+/**
+ * Author: Sonwabo Kasi
+ * Class: Part Time
+ * Student number: 214293939
+ * Class Description: Home screen
+ */
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "" ;
+    public static final String EXTRA_MESSAGE = "za\\cput\\ict3\\sonwabodevspace" ;
     EditText editText;
     Button button;
 

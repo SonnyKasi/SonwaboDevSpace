@@ -8,11 +8,17 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+/**
+ * Author: Sonwabo Kasi
+ * Class: Part Time
+ * Student number: 214293939
+ * Class Description: Menu screen
+ */
 
 public class SecondActivity extends AppCompatActivity{
 
    Button button1,button2,button3,button4;
-   TextView textView1,textView2;
+   TextView textView1,textView2,textView3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +29,9 @@ public class SecondActivity extends AppCompatActivity{
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
         textView1 = findViewById(R.id.textView4);
-        textView1.setText("Greetings"+ message);
+        textView1.setText("Greetings ");
+        textView3 = findViewById(R.id.textView);
+        textView3.setText(message);
         textView2 = findViewById(R.id.textView5);
         //textView2.setText("");
 
@@ -61,7 +69,7 @@ public class SecondActivity extends AppCompatActivity{
         button4.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SecondActivity.this, FirthActivity.class);
+                Intent intent = new Intent(SecondActivity.this, ListViewActivity.class);
                 startActivity(intent);
 
             }
