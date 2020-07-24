@@ -35,12 +35,7 @@ public class FourthActivity extends AppCompatActivity {
 });
 
         textView= findViewById(R.id.textViewAbt);
-        textView.setText("Hi, my name is Sonwabo Kasi. " +
-                "I am 3rd year student at CPUT, studying Applications Development. " +
-                "I have a passion for developing apps. " +
-                "I enjoy coding and resolving issues within a code." +
-                "I wish to open my own development company and a non-profit organisation to teach disadvantaged children coding" +
-                "This world would be a better place if we look out for each other.");
+        textView.setText(String.format("Hi, my name is Sonwabo Kasi. I am 3rd year student at CPUT, studying Applications Development. I have a passion for developing apps. I enjoy coding and resolving issues within a code.I have experience in web development, photoshop designing, video production. Also Javascript, Html and Java languages.I have worked with Inkathalo Foundation,Mzoli's and my own profile,creating websites,logos,and business cards.Besides codind I enjoy being outdoor,long drives along the coast. I also enjoy playing console game and also sportsI wish to open my own development company and a non-profit organisation to teach disadvantaged children codingThis world would be a better place if we look out for each other."));
 
     }
 }

@@ -47,7 +47,7 @@
                 android:layout_gravity="center_horizontal"
                 android:text="My Story"
                 android:textColor="@color/design_default_color_on_primary"
-                android:textSize="24sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/textViewAbt"
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:text="TextView"
                 android:textColor="@color/design_default_color_on_primary"
-                android:textSize="30sp" />
+                android:textSize="24sp" />
 
         </LinearLayout>
     </ScrollView>

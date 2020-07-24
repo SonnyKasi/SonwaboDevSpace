@@ -52,14 +52,10 @@ public class ThirdActivity extends AppCompatActivity {
                         {
                             int result = Integer.parseInt(num1.getText().toString())/Integer.parseInt(num2.getText().toString());
                             // show it to them
-                            Log.v("EditText", "result is "+result);
+                            //Log.v("EditText", "result is "+result);
 
-                            Snackbar.make(findViewById(R.id.parent), +result,
-                                    Snackbar.LENGTH_SHORT)
-                                    .show();
-
-                            //Toast.makeText(getApplicationContext(),"result is "+result,
-                                    //Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),"result is "+result,
+                                    Toast.LENGTH_LONG).show();
                         }
                         catch (final NumberFormatException e)
                         {

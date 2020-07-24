@@ -26,14 +26,12 @@ public class SecondActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        //Intent intent = getIntent();
-        //String getName = intent.getStringExtra("EXTRA_MESSAGE");
 
         textView1 = findViewById(R.id.textView4);
-        textView1.setText("Greetings ");
+        textView1.setText("Greetings");
 
         textView3 = findViewById(R.id.textView);
-        textView3.setText(getIntent().getStringExtra("EXTRA_MESSAGE"));
+        textView3.setText(getIntent().getStringExtra("message"));
 
         textView2 = findViewById(R.id.textView5);
 
