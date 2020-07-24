@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00897B"
+    android:background="#15C8B6"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,8 +15,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginRight="16dp"
         android:text="Sonwabo"
-        android:textColor="@color/design_default_color_on_primary"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/design_default_color_on_primary"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

@@ -15,33 +15,24 @@ import android.widget.EditText;
  */
 
 public class MainActivity extends AppCompatActivity {
-    public static String EXTRA_MESSAGE = "za.cput.ict3.sonwabodevspace" ;
     EditText editText;
     Button button;
+    String message;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //final String message = getIntent().getStringExtra("KEY");
-        //EditText editText = findViewById(R.id.editText1);
-       // editText.setText(message);
-        Intent sendName = new Intent(MainActivity.this, SecondActivity.class);
-        EditText editText = (EditText) findViewById(R.id.editText1);
-        String message = editText.getText().toString();
-        sendName.putExtra("EXTRA_MESSAGE",message);
-        //startActivity(intent);
-
-        final Button button = findViewById(R.id.buttonNext);
-        //final EditText text = findViewById(R.id.editText1);
-
+        button = findViewById(R.id.buttonNext);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {Intent intent =new Intent(MainActivity.this,SecondActivity.class);
-                //String message =  editText.getText().toString();
-                //intent.putExtra(Intent.EXTRA_MESSAGE,message);
-                startActivity(intent);
+            public void onClick(View v) {Intent intent =new Intent(v.getContext(),SecondActivity.class);
+        EditText editText = (EditText) findViewById(R.id.editText1);
+        message = editText.getText().toString();
+        Intent sendName = new Intent(MainActivity.this, SecondActivity.class);
+        sendName.putExtra("EXTRA_MESSAGE",message);
+        startActivity(intent);
 
             }
         });

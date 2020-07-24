@@ -1,7 +1,5 @@
 package za.cput.ict3.sonwabodevspace;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +7,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-import static za.cput.ict3.sonwabodevspace.MainActivity.EXTRA_MESSAGE;
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Author: Sonwabo Kasi
@@ -28,16 +26,16 @@ public class SecondActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(EXTRA_MESSAGE);
-        //EXTRA_MESSAGE = message;
+        //Intent intent = getIntent();
+        //String getName = intent.getStringExtra("EXTRA_MESSAGE");
 
         textView1 = findViewById(R.id.textView4);
         textView1.setText("Greetings ");
+
         textView3 = findViewById(R.id.textView);
-        textView3.setText(message);
+        textView3.setText(getIntent().getStringExtra("EXTRA_MESSAGE"));
+
         textView2 = findViewById(R.id.textView5);
-        //textView2.setText("");
 
         Button button1 = findViewById(R.id.buttonHome);
         Button button2 = findViewById(R.id.buttonCalculate);

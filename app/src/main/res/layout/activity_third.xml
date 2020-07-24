@@ -51,7 +51,7 @@
         android:layout_marginBottom="82dp"
         android:ems="10"
         android:hint="enter the volume"
-        android:inputType="number|numberDecimal"
+        android:inputType="numberDecimal"
         android:textColor="@color/design_default_color_on_secondary"
         app:layout_constraintBottom_toTopOf="@+id/buttonCalculate"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -65,7 +65,7 @@
         android:layout_marginBottom="102dp"
         android:ems="10"
         android:hint="enter the mass"
-        android:inputType="number|numberDecimal"
+        android:inputType="numberDecimal"
         android:textColor="@color/design_default_color_on_secondary"
         app:layout_constraintBottom_toTopOf="@+id/editText2"
         app:layout_constraintEnd_toEndOf="parent" />
